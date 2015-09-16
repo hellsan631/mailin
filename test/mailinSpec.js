@@ -153,6 +153,8 @@ describe('Mailin', function () {
 
       mailin.start({
           disableDnsValidation: false,
+          verbose: false,
+          logLevel: 'error',
           smtpOptions: {
               disabledCommands: ['AUTH'],
               secure: false
